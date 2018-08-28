@@ -121,7 +121,6 @@ public class TatocOnChromeAdv {
 			System.out.println(postconn.getResponseMessage());
 
 			postconn.disconnect();
-//			Thread.sleep(5000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Proceed']")));
 			driver.findElement(By.xpath("//a[text()='Proceed']")).click();
 		} catch (Exception e) {
@@ -150,7 +149,7 @@ public class TatocOnChromeAdv {
 		driver.findElement(By.className("submit")).click();
 		System.out.println("property: " + prop.getProperty("Signature"));
 
-//		driver.close();
+
 
 	}
 
